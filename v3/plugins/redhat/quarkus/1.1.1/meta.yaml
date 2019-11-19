@@ -21,4 +21,4 @@ spec:
   extensions:
     - https://github.com/microsoft/vscode-java-debug/releases/download/0.23.0/vscode-java-debug-0.23.0.vsix
     - https://download.jboss.org/jbosstools/static/jdt.ls/stable/java-0.50.0-1825.vsix
-    - https://download.jboss.org/jbosstools/vscode/snapshots/vscode-quarkus/vscode-quarkus-1.1.1-158.vsix
+    - https://download.jboss.org/jbosstools/vscode/snapshots/vscode-quarkus/vscode-quarkus-1.2.0-177.vsix
