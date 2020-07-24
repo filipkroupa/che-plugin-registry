@@ -1,8 +1,9 @@
 Header always set Access-Control-Allow-Origin "*"
 Header set Access-Control-Allow-Headers "Authorization"
 DirectoryIndex README.md
-Redirect temp /plugins /v3/plugins
-Redirect temp /resources /v3/resources
+RewriteEngine On
+RewriteRule ^plugins/(.*)$ https://%{HTTP_HOST}/v3/plugins/$1 [R=301,NC,L]
+RewriteRule ^resources/(.*)$ https://%{HTTP_HOST}/v3/resources/$1 [R=301,NC,L]
 <FilesMatch "\.(json|yaml)$">
     <IfModule mod_expires.c>
 	ExpiresActive Off
