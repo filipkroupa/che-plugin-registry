@@ -22,4 +22,5 @@ data:
   {{- with .tag }}
   CHE_SIDECAR_CONTAINERS_REGISTRY_TAG: {{ . | quote }}
   {{- end }}
+  CHE_PLUGIN_REGISTRY_URL: http{{- if .Values.chePluginRegistryIngressSecretName -}}s{{- end -}}{{- printf "://che-plugin-registry-%s.%s" .Release.Namespace .Values.global.ingressDomain }}
 {{- end }}
